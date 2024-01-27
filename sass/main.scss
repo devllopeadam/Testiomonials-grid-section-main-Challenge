@@ -1,0 +1,147 @@
+@use "./variables" as *;
+// Global rules
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #edf2f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+}
+
+h1,
+p,
+blockquote {
+  margin: 0;
+}
+
+.grid-column-2 {
+  grid-column: span 2;
+}
+.grid-row-2 {
+  grid-row: span 2;
+}
+
+.testimonials {
+  width: min(95%, 1300px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+  margin-top: 50px;
+  gap: 1.5rem;
+  @media (min-width: 992px) {
+    max-height: 500px;
+  }
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5";
+  }
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(250px, auto));
+    grid-template-areas:
+      "card1 card4"
+      "card2 card3"
+      "card5 card5";
+  }
+
+  &__box {
+    background-color: red;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #7f8896;
+    box-shadow: 0 0 10px 0px #dfe0e1;
+    &:not(:nth-child(5), :nth-child(3)) {
+      color: white;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+
+      &__image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      &__info {
+        flex: 1;
+        margin-left: 15px;
+
+        p:first-child {
+          font-size: 13px;
+          margin-bottom: 4px;
+        }
+        p:last-child {
+          font-size: 11px;
+          opacity: 0.7;
+        }
+      }
+    }
+    &__body {
+      &__description {
+        font-size: 1.25rem;
+        margin-bottom: 18px;
+      }
+
+      &__quote {
+        opacity: 0.7;
+        font-size: 0.813rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__box:first-child {
+    grid-area: card1;
+    background-color: $violet;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+  }
+  &__box:nth-child(2) {
+    grid-area: card2;
+    background-color: $dark_gray;
+  }
+  &__box:nth-child(3) {
+    grid-area: card3;
+    background-color: $white;
+  }
+  &__box:nth-child(4) {
+    grid-area: card4;
+    background-color: $black;
+  }
+  &__box:nth-child(5) {
+    grid-area: card5;
+    background-color: $white;
+  }
+}
