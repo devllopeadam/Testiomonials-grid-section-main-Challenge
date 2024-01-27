@@ -8,33 +8,20 @@
 | [Solution](https://github.com/devllopeadam/Testiomonials-grid-section-main-Challenge)
 | [Challenge](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 
-Solution for a challenge from [frontendmentor.io](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-V6T07Ji6vJ)
+Solution for a challenge from [frontendmentor.io](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7J)
 
 </div>
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
 
@@ -50,8 +37,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/devllopeadam/Testiomonials-grid-section-main-Challenge)
+- Live Site URL: [Add live site URL here](https://devllopeadam.github.io/Testiomonials-grid-section-main-Challenge/)
 
 ## My process
 
@@ -74,5 +61,3 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Website - [Jeniah Adam](https://devllopeadam.github.io/Testiomonials-grid-section-main-Challenge/)
 - Frontend Mentor - [CodeAdam](https://www.frontendmentor.io/profile/devllopeadam)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
